@@ -1,0 +1,131 @@
+@import url(//db.onlinewebfonts.com/c/073a3b73a63a87e100f6bb8f003fc0d3?family=Flexo+Light);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Flexo-Demi",arial,sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+}
+
+.pokemons-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.pokemon {
+    width: 220px;
+    /* background-color: white; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon + .pokemon {
+    margin-left: 30px;
+}
+
+.pokemon:hover {
+    animation: motion 0.5s;
+}
+
+@keyframes motion {
+    0% {margin-top:0;}
+    50% {margin-top: 10px;}
+    100% {margin-top: 0px;}
+}
+
+figure {
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#sus {
+    cursor: pointer;
+}
+
+.pokemon-image {
+    width: 200px;
+}
+
+.pokemon-info {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 10px 4px 20px;
+}
+
+.number {
+    font-size: 12px;
+    font-weight: 600;
+    color: #919191;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #313131;
+    margin-top: 10px;
+}
+
+.pokemon-types {
+    margin-top: 5px;
+}
+
+.type {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    padding: 3px 0;
+    border-radius: 4px;
+}
+
+.grass {
+    background-color: #9bcc50;
+}
+
+.poison {
+    background-color: #B97FC9;
+    color: white;
+}
+
+.bug {
+    background-color: #729F3F;
+    color: white
+}
+
+.steel {
+    background-color: #9EB7B8;
+}
+
+.water {
+    background-color: #4592C4;
+    color: white
+
+}
+
+.ghost {
+    background-color: #7B62A3;
+    color: white
+
+}
+
+audio {
+    display: none;
+}
