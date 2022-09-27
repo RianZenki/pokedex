@@ -13,38 +13,81 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px;
 
     background-color: white;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.search {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[type=text] {
+    width: 300px;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: #EDEDED;
+    border-radius: 4px 0 0 4px;
+    font-size: 18px;
+    font-weight: 600;
+    color: gray;
+    outline: none;
+
+    border: none;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 20px;
+
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    background-color: #EDEDED;
 }
 
 .pokemons-container {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-    padding: 20px;
     flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 40px;
+    max-width: 1110px;
+    width: 85%;
+}
+
+.pokemons-container > p {
+    margin: 0 auto;
 }
 
 .pokemon {
     width: 220px;
-    /* background-color: white; */
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-}
-
-.pokemon + .pokemon {
     margin-left: 30px;
+    margin-bottom: 60px;
 }
 
 .pokemon:hover {
-    animation: motion 0.5s;
+    animation: bounce 0.5s;
 }
 
-@keyframes motion {
-    0% {margin-top:0;}
-    50% {margin-top: 10px;}
-    100% {margin-top: 0px;}
+@keyframes bounce {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
 }
 
 figure {
@@ -52,10 +95,6 @@ figure {
     background-color: #F2F2F2;
     border-radius: 5px;
     text-align: center;
-}
-
-#sus {
-    cursor: pointer;
 }
 
 .pokemon-image {
@@ -87,6 +126,7 @@ h2 {
 
 .type {
     display: inline-block;
+    color: #212121;
     width: 80px;
     height: 20px;
     font-size: 12px;
@@ -94,6 +134,7 @@ h2 {
     text-align: center;
     padding: 3px 0;
     border-radius: 4px;
+    margin-right: 4px;
 }
 
 .grass {
@@ -107,7 +148,7 @@ h2 {
 
 .bug {
     background-color: #729F3F;
-    color: white
+    color: white;
 }
 
 .steel {
@@ -116,14 +157,63 @@ h2 {
 
 .water {
     background-color: #4592C4;
-    color: white
+    color: white;
 
 }
 
 .ghost {
     background-color: #7B62A3;
-    color: white
+    color: white;
 
+}
+
+.fire {
+    background-color: #FD7D24;
+    color: white;
+}
+
+.flying {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
+
+.normal {
+    background-color: #A4ACAF;
+}
+
+.rock {
+    background-color: #a38c21;
+    color: white;
+}
+
+.ground {
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+}
+
+.dragon {
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    color: white;
+}
+
+.fairy {
+    background-color: #fdb9e9;
+}
+
+.electric {
+    background-color: #EED535;
+}
+
+.psychic {
+    background-color: #F366B9;
+    color: white;
+}
+
+.fighting {
+    background-color: #D56723;
+    color: white;
+}
+
+.ice {
+    background-color: #51c4e7;
 }
 
 audio {

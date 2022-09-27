@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Pokedex</title>
 </head>
@@ -12,77 +13,15 @@
     <main>
         <h1>Pokedex</h1>
         <div class="search">
-            <input type="text">
-            <button>P</button>
+            <input type="text" placeholder="Procure pelo nome ou numero">
+            <button class="search-button">
+                <img src="./icons8-search.svg" alt="search-icon">
+            </button>
         </div>
 
         <div class="pokemons-container">
-            <article class="pokemon"> <!--li-->
-                <figure>
-                    <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/589.png" alt="Escavalier">
-                </figure>
-                <div class="pokemon-info">
-                    <p>
-                        <span class="number">N°589</span>
-                    </p>
-                    <h2>Escavalier</h2>
-                    <div class="pokemon-types">
-                        <span class="type bug">Grass</span>
-                        <span class="type steel">Poison</span>
-                    </div>
-                </div>
-            </article>
-            <article class="pokemon"> <!--li-->
-                <figure>
-                    <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/590.png" alt="foongus">
-                </figure>
-                <div class="pokemon-info">
-                    <p>
-                        <span class="number">N°590</span>
-                    </p>
-                    <h2>Foongus</h2>
-                    <div class="pokemon-types">
-                        <span class="type grass">Grass</span>
-                        <span class="type poison">Poison</span>
-                    </div>
-                </div>
-            </article>
-            <article class="pokemon"> <!--li-->
-                <figure id="sus">
-                    <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/591.png" alt="Amoonguss">
-                </figure>
-                <div class="pokemon-info">
-                    <p>
-                        <span class="number">N°591</span>
-                    </p>
-                    <h2>Amoonguss</h2>
-                    <div class="pokemon-types">
-                        <span class="type grass">Grass</span>
-                        <span class="type poison">Poison</span>
-                    </div>
-                </div>
-            </article>
-            <article class="pokemon"> <!--li-->
-                <figure>
-                    <img class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/592.png" alt="frillish">
-                </figure>
-                <div class="pokemon-info">
-                    <p>
-                        <span class="number">N°592</span>
-                    </p>
-                    <h2>Frillish</h2>
-                    <div class="pokemon-types">
-                        <span class="type water">Grass</span>
-                        <span class="type ghost">Poison</span>
-                    </div>
-                </div>
-            </article>
-
+            <p class="p">Carregando...</p>
         </div>
-
-        <audio class="audio" controls>
-            <source src="./Amogus.mp3" type="audio/mp3">
-        </audio>
     </main>
 
     <script src="./index.js"></script>
